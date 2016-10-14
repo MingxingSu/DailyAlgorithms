@@ -1,0 +1,57 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeStyle/LiveTemplatesUseVar/PreferVar/@EntryValue">False</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8847AD48D8484C5C9B81B0ED3C1063BF/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8847AD48D8484C5C9B81B0ED3C1063BF/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8847AD48D8484C5C9B81B0ED3C1063BF/Name/@EntryValue">All tests from TestSingleHandSortPies.cs</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=8847AD48D8484C5C9B81B0ED3C1063BF/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;/Session&gt;</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C69609B1AFE442469064095628B80047/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C69609B1AFE442469064095628B80047/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C69609B1AFE442469064095628B80047/Name/@EntryValue">All tests from DailyAlgorithms.Tests</s:String>
+	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C69609B1AFE442469064095628B80047/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;e Id="DailyAlgorithms.Tests.Sort.TestQuickSort" Project="54ACE666-AB50-46AD-9BDE-9203EF4F91C5" Provider="MSTest" /&gt;&lt;e Id="DailyAlgorithms.Tests.DivideConquerMethod.TestFastExponentiation.TestFastExponentiationMethod" Project="54ACE666-AB50-46AD-9BDE-9203EF4F91C5" Provider="MSTest" /&gt;&lt;e Id="DailyAlgorithms.Tests.DivideConquerMethod.TestFastExponentiation" Project="54ACE666-AB50-46AD-9BDE-9203EF4F91C5" Provider="MSTest" /&gt;&lt;/Session&gt;</s:String></wpf:ResourceDictionary>

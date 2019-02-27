@@ -14,7 +14,7 @@ namespace _03_LongestNonRepeatSubStr
         private static void Main(string[] args)
         {
             var input = "abcdabefgabbaedf";
-            int longestLenght = LengOfLongestSubString(input);
+            int longestLenght = LengOfLongestSubStringV2(input);
             Console.WriteLine("Input String:" + input);
             Console.WriteLine("Longest SubString's length is:"+ longestLenght);
             Console.Read();
@@ -26,9 +26,10 @@ namespace _03_LongestNonRepeatSubStr
             int _tempMax = 0;
             int _startIndex = 0;
 
-            Hashtable  dict = new Hashtable();
+			//要用Dictionary<int,int>,不用Hashtable,避免装箱
+			Dictionary<int, int> dict = new Dictionary<int, int>();
 
-            for (int i = 0; i < s.Length; i++)
+			for (int i = 0; i < s.Length; i++)
             {
                 if (!dict.ContainsKey(s[i]))
                 {
@@ -51,7 +52,23 @@ namespace _03_LongestNonRepeatSubStr
 
             return _globalMax;
         }
-    }
+
+		private static int LengOfLongestSubStringV2(string s)
+		{
+
+			Dictionary<int,int> dict = new Dictionary<int, int>();
+
+			for (int i = 0; i < s.Length; i++)
+			{
+				if (!dict.ContainsKey(s[i]))
+				{
+					dict[s[i]] = i;
+				}
+			}
+
+			return dict.Count();
+		}
+	}
 
      
 

@@ -24,7 +24,7 @@ namespace _02_AddTwoNumbers
             l2.next = temp3;
             temp3.next = temp4;
 
-            var sumNode = Solution.AddTwoNumbers(l1, l2);
+            var sumNode = Solution.AddTwoNumbersV2(l1, l2);
 
             Console.WriteLine("{0}->", sumNode.val);
             Console.WriteLine("{0}->", sumNode.next.val);
@@ -119,7 +119,54 @@ namespace _02_AddTwoNumbers
             newNode.next = AddNumbeList(l1.next, l2.next, (tempSum / 10) == 1);
             return newNode;
         }
-    }
+
+
+		//V2 参考别人的solution写出来的
+		public static ListNode AddTwoNumbersV2(ListNode l1, ListNode l2)
+		{
+			//始终定义一个头指针，把要返回的链表存在head.next里
+			ListNode headNode = new ListNode(0);
+
+			//用头指针来初始化变量指针。
+			ListNode varNode = headNode;
+			int carry = 0;
+
+			//至少一个链表非空
+			while (l1 != null || l2 != null) {
+
+				//给缺失的节点赋值为0，这是一个常用的填坑技巧，从而抽象出一般的计算步骤，从而把循环外的IF判断转化为循环内，效率更高，更简介直观，更符合本地化原则。
+				int firstVal = l1 != null ? l1.val : 0;
+				int secondVal = l2 != null ? l2.val : 0;
+
+				int sum = firstVal + secondVal + carry;
+
+				if (sum > 9)
+				{
+					carry = sum / 10;
+					sum -= 10;
+				}
+				else
+					carry = 0;
+
+				//把计算结果添加到结果链表里
+				varNode.next = new ListNode(sum);
+				
+				//注意更新指针，否则节点之间的关系就是覆盖，而不再是联结。
+				varNode = varNode.next;
+				
+				//更新遍历源链表的两个指针
+				if (l1 != null) l1 = l1.next;
+				if (l2 != null) l2 = l2.next;
+
+			}
+			//处理最后有无进位
+			if (carry > 0) {
+				varNode.next = new ListNode(carry);
+			}
+
+			return headNode.next;			
+		}
+	}
 
     public class ListNode
     {

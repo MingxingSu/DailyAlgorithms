@@ -1,0 +1,7 @@
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\bin\Debug\01-TwoSum.exe.config
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\bin\Debug\01-TwoSum.exe
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\bin\Debug\01-TwoSum.pdb
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\obj\Debug\01-TwoSum.csprojAssemblyReference.cache
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\obj\Debug\01-TwoSum.csproj.CoreCompileInputs.cache
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\obj\Debug\01-TwoSum.exe
+C:\Users\sumx\Documents\Github\DailyAlgorithms-master\01-TwoSum\obj\Debug\01-TwoSum.pdb

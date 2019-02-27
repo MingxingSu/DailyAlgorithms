@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +24,10 @@ namespace _01_TwoSum
          */
         static void Main(string[] args)
         {
-            var nums = new [] {0,4,3,0};
+            var nums = new [] {0,4,3,0,1};
             var targetSum = 0;
 
-            var result = Solution.TwoSum_V2(nums, targetSum);
+            var result = Solution.TwoSum_V3(nums, targetSum);
 
             for (int index = 0; index < result.Length;index = index +2)
             {
@@ -116,5 +117,27 @@ namespace _01_TwoSum
             
             return locations.ToArray();
         }
-    }
+
+		//参考别人的思路之后写的
+		public static int[] TwoSum_V3(int[] nums, int target)
+		{
+			int[] res = new int[2];
+			Dictionary<int, int> map = new Dictionary<int, int>();
+			for (int i = 0; i < nums.Length; i++)
+			{
+				if (map.ContainsKey(target - nums[i]) && map[target - nums[i]] != i)
+				{
+					res[1] = i;
+					res[0] = map[target - nums[i]];
+					break;
+				}
+				if (!map.ContainsKey(nums[i]))
+				{
+					map.Add(nums[i], i);
+				}
+			}
+			return res;
+
+		}
+	}
 }
